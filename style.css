@@ -1,0 +1,98 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.search-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d1ff;
+    text-shadow: 0 0 5px #00d1ff;
+}
+
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 30px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 209, 255, 0.7);
+}
+
+/* Add margin-top to move the button lower */
+.search-box button {
+    padding: 12px 25px;
+    margin-left: 10px;
+    margin-top: 20px;  /* Adjust this value to move the button further down */
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #00d1ff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #00a1cc;
+    transform: scale(1.05);
+}
+
+.results-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.result-item {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.result-item:hover {
+    transform: translateY(-5px);
+}
+
+.result-item a {
+    color: #00d1ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
